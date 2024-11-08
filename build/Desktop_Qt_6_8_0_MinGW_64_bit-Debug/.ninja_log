@@ -1,0 +1,25 @@
+# ninja log v6
+23	846	7527508701024395	Test_autogen/timestamp	66f4407061c98cbd
+847	3210	7527508701853222	CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj	6d331cca6e8ce0bd
+23	846	7527508701024395	Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+23	846	7527508701024395	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/timestamp	66f4407061c98cbd
+23	846	7527508701024395	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+862	2777	7527508702008961	CMakeFiles/Test.dir/ChatClient.cpp.obj	f1d3c5312b6fe2d6
+858	3169	7527508701971736	CMakeFiles/Test.dir/ChatServer.cpp.obj	fa925d0853897fa2
+851	3169	7527508701893361	CMakeFiles/Test.dir/main.cpp.obj	3b579031ae87c478
+17	45	7527508660757176	CMakeFiles/clean.additional	baedbe210acaa455
+45	57	7527508661053139	clean	577b940aee94fbd7
+855	3492	7527508701923010	CMakeFiles/Test.dir/ChatWindow.cpp.obj	a04045377edd2ec3
+3492	3805	7527508728308133	Test.exe	735a7d3187a87533
+15	239	7527509708507226	Test_autogen/timestamp	66f4407061c98cbd
+15	239	7527509708507226	Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+15	239	7527509708507226	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/timestamp	66f4407061c98cbd
+15	239	7527509708507226	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+240	2428	7527509710883513	CMakeFiles/Test.dir/ChatWindow.cpp.obj	a04045377edd2ec3
+2428	2743	7527509732770339	Test.exe	735a7d3187a87533
+33	243	7527521326920959	Test_autogen/timestamp	66f4407061c98cbd
+33	243	7527521326920959	Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+33	243	7527521326920959	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/timestamp	66f4407061c98cbd
+33	243	7527521326920959	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/mocs_compilation.cpp	66f4407061c98cbd
+244	2731	7527521329022787	CMakeFiles/Test.dir/ChatWindow.cpp.obj	a04045377edd2ec3
+2731	3046	7527521353759334	Test.exe	735a7d3187a87533
