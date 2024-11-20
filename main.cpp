@@ -1,18 +1,19 @@
 #include <QApplication>
-#include "ChatWindow.h"
-#include "ChatServer.h"
+#include "LoginWindow.h"
+#include "DatabaseManager.h"
+#include <QDebug>
 
 int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
+    QApplication app(argc, argv);
 
-    ChatServer server;
-    if (!server.startServer(8888)) {
-        qCritical() << "서버 시작 실패!";
+    QSqlDatabase db = DatabaseManager::getDatabase(); // 프로그램 시작 시 데이터베이스 초기화
+    if (!db.isOpen()) {
+        qDebug() << "Failed to open the database at startup.";
         return -1;
     }
 
-    ChatWindow w;
-    w.show();
+    LoginWindow loginWindow;
+    loginWindow.show();
 
-    return a.exec();
+    return app.exec();
 }

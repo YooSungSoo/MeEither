@@ -3,6 +3,7 @@
 
 #include <QTcpServer>
 #include <QTcpSocket>
+#include <QSqlDatabase>
 #include <QMap>
 #include <QStringList>
 
@@ -20,6 +21,7 @@ private slots:
     void onReadyRead();
 
 private:
+    QSqlDatabase db; // 데이터베이스 객체
     QMap<QTcpSocket*, QString> clients;      // 클라이언트별 소켓과 방 이름 매핑
     QMap<QString, QList<QTcpSocket*>> chatRooms; // 방별 클라이언트 리스트
 };

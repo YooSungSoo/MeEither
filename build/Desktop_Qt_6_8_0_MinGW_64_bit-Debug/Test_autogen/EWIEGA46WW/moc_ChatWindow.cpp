@@ -38,8 +38,7 @@ constexpr auto qt_meta_stringdata_CLASSChatWindowENDCLASS = QtMocHelpers::string
     "ChatWindow",
     "onSendMessage",
     "",
-    "onMessageReceived",
-    "message"
+    "onLeaveRoom"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -61,11 +60,11 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChatWindowENDCLASS[] = {
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        1,    0,   26,    2, 0x08,    1 /* Private */,
-       3,    1,   27,    2, 0x08,    2 /* Private */,
+       3,    0,   27,    2, 0x08,    2 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -81,9 +80,8 @@ Q_CONSTINIT const QMetaObject ChatWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<ChatWindow, std::true_type>,
         // method 'onSendMessage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onMessageReceived'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        // method 'onLeaveRoom'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -95,10 +93,11 @@ void ChatWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->onSendMessage(); break;
-        case 1: _t->onMessageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->onLeaveRoom(); break;
         default: ;
         }
     }
+    (void)_a;
 }
 
 const QMetaObject *ChatWindow::metaObject() const

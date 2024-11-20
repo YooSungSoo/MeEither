@@ -56,6 +56,7 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/6.8.0/mingw_64/include/QtCore/qmap.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qnamespace.h \
@@ -124,6 +125,11 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.8.0/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.8.0/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Qt/6.8.0/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \

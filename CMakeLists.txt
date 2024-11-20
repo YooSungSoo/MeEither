@@ -34,6 +34,17 @@ if (QT_VERSION_MAJOR EQUAL 6)
 else()
     add_executable(Test
         ${PROJECT_SOURCES}
+        SignUpWindow.ui
+        SignUpWindow.h
+        SignUpWindow.cpp
+        LoginWindow.h
+        LoginWindow.cpp
+        LoginWindow.ui
+        ChatRoomList.ui
+        ChatRoomList.h
+        ChatRoomList.cpp
+        DatabaseManager.h
+        DatabaseManager.cpp
     )
 endif()
 
@@ -58,3 +69,8 @@ install(TARGETS Test
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(Test)
 endif()
+
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Network Sql)
+
+target_link_libraries(Test PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Network Qt6::Sql)
+

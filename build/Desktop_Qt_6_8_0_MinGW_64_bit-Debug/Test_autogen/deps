@@ -1,6 +1,8 @@
 Test_autogen/timestamp: \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QList \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/QMap \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/QStringList \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
@@ -60,6 +62,7 @@ Test_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qmargins.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qmath.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qmetacontainer.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qmetaobject.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qmetatype.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qminmax.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qnamespace.h \
@@ -157,7 +160,13 @@ Test_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
 	C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
 	C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+	C:/Qt/6.8.0/mingw_64/include/QtSql/QSqlDatabase \
+	C:/Qt/6.8.0/mingw_64/include/QtSql/qsqldatabase.h \
+	C:/Qt/6.8.0/mingw_64/include/QtSql/qtsql-config.h \
+	C:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlexports.h \
+	C:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlglobal.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -300,6 +309,31 @@ Test_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \
@@ -569,15 +603,26 @@ Test_autogen/timestamp: \
 	C:/Users/elcan/Desktop/Test/CMakeLists.txt \
 	C:/Users/elcan/Desktop/Test/ChatClient.cpp \
 	C:/Users/elcan/Desktop/Test/ChatClient.h \
+	C:/Users/elcan/Desktop/Test/ChatRoomList.cpp \
+	C:/Users/elcan/Desktop/Test/ChatRoomList.h \
 	C:/Users/elcan/Desktop/Test/ChatServer.cpp \
 	C:/Users/elcan/Desktop/Test/ChatServer.h \
 	C:/Users/elcan/Desktop/Test/ChatWindow.cpp \
 	C:/Users/elcan/Desktop/Test/ChatWindow.h \
+	C:/Users/elcan/Desktop/Test/DatabaseManager.cpp \
+	C:/Users/elcan/Desktop/Test/DatabaseManager.h \
+	C:/Users/elcan/Desktop/Test/LoginWindow.cpp \
+	C:/Users/elcan/Desktop/Test/LoginWindow.h \
+	C:/Users/elcan/Desktop/Test/SignUpWindow.cpp \
+	C:/Users/elcan/Desktop/Test/SignUpWindow.h \
 	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/moc_predefs.h \
 	C:/Users/elcan/Desktop/Test/main.cpp \
+	C:/Users/elcan/Desktop/Test/ChatRoomList.ui \
 	C:/Users/elcan/Desktop/Test/ChatWindow.ui \
+	C:/Users/elcan/Desktop/Test/LoginWindow.ui \
+	C:/Users/elcan/Desktop/Test/SignUpWindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -1,13 +1,33 @@
 #include "ChatServer.h"
-#include <QDebug>
+#include "DatabaseManager.h"
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QFile>
+#include <QCoreApplication>
 
 ChatServer::ChatServer(QObject *parent) : QTcpServer(parent) {
-    connect(this, &QTcpServer::newConnection, this, &ChatServer::onNewConnection);
+    QSqlDatabase db = DatabaseManager::getDatabase();
+
+    QSqlQuery query(db);
+    query.exec("CREATE TABLE IF NOT EXISTS users ("
+               "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+               "username TEXT NOT NULL, "
+               "password TEXT NOT NULL, "
+               "nickname TEXT NOT NULL, "
+               "birth_date TEXT, "
+               "gender TEXT)");
+    if (query.lastError().isValid()) {
+        qDebug() << "Failed to create table:" << query.lastError().text();
+    }
 }
+
+
 
 bool ChatServer::startServer(quint16 port) {
     return listen(QHostAddress::Any, port);
 }
+
+
 
 void ChatServer::onNewConnection() {
     QTcpSocket *clientSocket = nextPendingConnection();

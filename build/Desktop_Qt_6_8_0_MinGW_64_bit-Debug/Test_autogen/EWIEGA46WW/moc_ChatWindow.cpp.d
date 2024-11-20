@@ -1,6 +1,6 @@
 C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/EWIEGA46WW/moc_ChatWindow.cpp: C:/Users/elcan/Desktop/Test/ChatWindow.h \
   C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autogen/moc_predefs.h \
-  C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -46,7 +46,6 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
-  C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
@@ -147,13 +146,6 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/QTcpSocket \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qabstractsocket.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qhostaddress.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtcpsocket.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
-  C:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -367,5 +359,4 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/elcan/Desktop/Test/ChatClient.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
