@@ -7,10 +7,7 @@ ChatWindow::ChatWindow(QWidget *parent) :
     ui(new Ui::ChatWindow) {
     ui->setupUi(this);
 
-    // 메시지 전송 버튼 연결
     connect(ui->sendButton, &QPushButton::clicked, this, &ChatWindow::onSendMessage);
-
-    // 채팅방 나가기 버튼 연결
     connect(ui->leaveRoomButton, &QPushButton::clicked, this, &ChatWindow::onLeaveRoom);
 }
 
