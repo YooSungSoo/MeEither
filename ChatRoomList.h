@@ -2,8 +2,8 @@
 #define CHATROOMLIST_H
 
 #include <QWidget>
-#include <QList>
-#include "ChatWindow.h"
+#include <QTableWidget>
+#include <QString>
 
 namespace Ui {
 class ChatRoomList;
@@ -16,13 +16,15 @@ public:
     explicit ChatRoomList(const QString &nickname, QWidget *parent = nullptr);
     ~ChatRoomList();
 
+    void addUserToTable(const QString &nickname, int age, const QString &gender);
+
 private slots:
     void onCreateRoomClicked();
     void onJoinRoomClicked();
 
 private:
     Ui::ChatRoomList *ui;
-    QString nickname; // 닉네임 저장
+    QString nickname;  // 사용자 닉네임
 };
 
 #endif // CHATROOMLIST_H

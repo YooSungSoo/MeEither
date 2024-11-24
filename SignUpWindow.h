@@ -7,8 +7,7 @@ namespace Ui {
 class SignUpWindow;
 }
 
-class SignUpWindow : public QWidget
-{
+class SignUpWindow : public QWidget {
     Q_OBJECT
 
 public:
@@ -16,8 +15,8 @@ public:
     ~SignUpWindow();
 
 private slots:
-    void onSignUpButtonClicked(); // 회원가입 버튼 처리
-    void onCheckUsernameClicked(); // 아이디 중복 확인
+    void onSignUpButtonClicked();
+    void onCheckUsernameClicked(); // 중복 확인 메서드
 
 private:
     Ui::SignUpWindow *ui;

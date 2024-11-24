@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>550</height>
+    <width>651</width>
+    <height>548</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
     QPushButton:hover {
         background-color: #4682b4;
     }
-    QListWidget {
+    QListWidget, QTableWidget {
         border: 1px solid #87ceeb;
         border-radius: 5px;
         padding: 5px;
@@ -52,7 +52,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>동행 찾기 플랫폼 MeEither에 오신 것을 환영합니다 !</string>
+    <string>동행 찾기 플랫폼 MeEither에 오신 것을 환영합니다!</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -97,7 +97,7 @@
   <widget class="QLabel" name="myInformation">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>480</x>
      <y>50</y>
      <width>200</width>
      <height>30</height>
@@ -107,18 +107,18 @@
     <string>닉네임: 사용자</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="activeUsersListWidget">
+  <widget class="QTableWidget" name="userInfoTable">
    <property name="geometry">
     <rect>
      <x>430</x>
-     <y>100</y>
-     <width>180</width>
-     <height>350</height>
+     <y>80</y>
+     <width>201</width>
+     <height>351</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string>
-     QListWidget {
+     QTableWidget {
          background-color: #f9f9f9;
          border: 1px solid #87ceeb;
          border-radius: 5px;
@@ -126,22 +126,37 @@
      }
     </string>
    </property>
-  </widget>
-  <widget class="QLabel" name="activeUsersLabel">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>80</y>
-     <width>180</width>
-     <height>20</height>
-    </rect>
+   <property name="columnCount">
+    <number>3</number>
    </property>
-   <property name="text">
-    <string>현재 접속자 목록</string>
+   <property name="horizontalHeaderLabels" stdset="0">
+    <stringlist>
+     <string>닉네임</string>
+     <string>나이</string>
+     <string>성별</string>
+    </stringlist>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
-   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>23</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>60</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>17</number>
+   </attribute>
+   <column/>
+   <column/>
+   <column/>
   </widget>
  </widget>
  <resources/>

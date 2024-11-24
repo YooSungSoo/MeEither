@@ -11,9 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,14 +28,13 @@ public:
     QPushButton *createRoomButton;
     QPushButton *joinRoomButton;
     QLabel *myInformation;
-    QListWidget *activeUsersListWidget;
-    QLabel *activeUsersLabel;
+    QTableWidget *userInfoTable;
 
     void setupUi(QWidget *ChatRoomList)
     {
         if (ChatRoomList->objectName().isEmpty())
             ChatRoomList->setObjectName("ChatRoomList");
-        ChatRoomList->resize(650, 550);
+        ChatRoomList->resize(651, 548);
         headerLabel = new QLabel(ChatRoomList);
         headerLabel->setObjectName("headerLabel");
         headerLabel->setGeometry(QRect(20, 10, 600, 30));
@@ -49,14 +50,19 @@ public:
         joinRoomButton->setGeometry(QRect(240, 470, 180, 40));
         myInformation = new QLabel(ChatRoomList);
         myInformation->setObjectName("myInformation");
-        myInformation->setGeometry(QRect(470, 50, 200, 30));
-        activeUsersListWidget = new QListWidget(ChatRoomList);
-        activeUsersListWidget->setObjectName("activeUsersListWidget");
-        activeUsersListWidget->setGeometry(QRect(430, 100, 180, 350));
-        activeUsersLabel = new QLabel(ChatRoomList);
-        activeUsersLabel->setObjectName("activeUsersLabel");
-        activeUsersLabel->setGeometry(QRect(430, 80, 180, 20));
-        activeUsersLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        myInformation->setGeometry(QRect(480, 50, 200, 30));
+        userInfoTable = new QTableWidget(ChatRoomList);
+        if (userInfoTable->columnCount() < 3)
+            userInfoTable->setColumnCount(3);
+        userInfoTable->setObjectName("userInfoTable");
+        userInfoTable->setGeometry(QRect(430, 80, 201, 351));
+        userInfoTable->setColumnCount(3);
+        userInfoTable->horizontalHeader()->setVisible(true);
+        userInfoTable->horizontalHeader()->setMinimumSectionSize(23);
+        userInfoTable->horizontalHeader()->setDefaultSectionSize(60);
+        userInfoTable->horizontalHeader()->setHighlightSections(true);
+        userInfoTable->verticalHeader()->setVisible(false);
+        userInfoTable->verticalHeader()->setDefaultSectionSize(17);
 
         retranslateUi(ChatRoomList);
 
@@ -82,7 +88,7 @@ public:
 "    QPushButton:hover {\n"
 "        background-color: #4682b4;\n"
 "    }\n"
-"    QListWidget {\n"
+"    QListWidget, QTableWidget {\n"
 "        border: 1px solid #87ceeb;\n"
 "        border-radius: 5px;\n"
 "        padding: 5px;\n"
@@ -93,19 +99,22 @@ public:
 "        color: #4682b4;\n"
 "    }\n"
 "   ", nullptr));
-        headerLabel->setText(QCoreApplication::translate("ChatRoomList", "\353\217\231\355\226\211 \354\260\276\352\270\260 \355\224\214\353\236\253\355\217\274 MeEither\354\227\220 \354\230\244\354\213\240 \352\262\203\354\235\204 \355\231\230\354\230\201\355\225\251\353\213\210\353\213\244 !", nullptr));
+        headerLabel->setText(QCoreApplication::translate("ChatRoomList", "\353\217\231\355\226\211 \354\260\276\352\270\260 \355\224\214\353\236\253\355\217\274 MeEither\354\227\220 \354\230\244\354\213\240 \352\262\203\354\235\204 \355\231\230\354\230\201\355\225\251\353\213\210\353\213\244!", nullptr));
         createRoomButton->setText(QCoreApplication::translate("ChatRoomList", "\354\261\204\355\214\205\353\260\251 \353\247\214\353\223\244\352\270\260", nullptr));
         joinRoomButton->setText(QCoreApplication::translate("ChatRoomList", "\354\261\204\355\214\205\353\260\251 \353\223\244\354\226\264\352\260\200\352\270\260", nullptr));
         myInformation->setText(QCoreApplication::translate("ChatRoomList", "\353\213\211\353\204\244\354\236\204: \354\202\254\354\232\251\354\236\220", nullptr));
-        activeUsersListWidget->setStyleSheet(QCoreApplication::translate("ChatRoomList", "\n"
-"     QListWidget {\n"
+        userInfoTable->setStyleSheet(QCoreApplication::translate("ChatRoomList", "\n"
+"     QTableWidget {\n"
 "         background-color: #f9f9f9;\n"
 "         border: 1px solid #87ceeb;\n"
 "         border-radius: 5px;\n"
 "         padding: 5px;\n"
 "     }\n"
 "    ", nullptr));
-        activeUsersLabel->setText(QCoreApplication::translate("ChatRoomList", "\355\230\204\354\236\254 \354\240\221\354\206\215\354\236\220 \353\252\251\353\241\235", nullptr));
+        userInfoTable->setProperty("horizontalHeaderLabels", QVariant(QStringList{
+            QCoreApplication::translate("ChatRoomList", "\353\213\211\353\204\244\354\236\204", nullptr),
+            QCoreApplication::translate("ChatRoomList", "\353\202\230\354\235\264", nullptr),
+            QCoreApplication::translate("ChatRoomList", "\354\204\261\353\263\204", nullptr)}));
     } // retranslateUi
 
 };

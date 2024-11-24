@@ -11,9 +11,13 @@ ChatRoomList::ChatRoomList(const QString &nickname, QWidget *parent)
 
     // 사용자 정보 표시
     ui->myInformation->setText("닉네임: " + nickname);
-
-    // 닉네임 저장
     this->nickname = nickname;
+
+    // 테이블 초기화
+    ui->userInfoTable->setColumnCount(3);
+    ui->userInfoTable->setHorizontalHeaderLabels({"닉네임", "나이", "성별"});
+    ui->userInfoTable->horizontalHeader()->setStretchLastSection(true);
+    ui->userInfoTable->setSelectionBehavior(QAbstractItemView::SelectRows);
 
     // 버튼 클릭 시 슬롯 연결
     connect(ui->createRoomButton, &QPushButton::clicked, this, &ChatRoomList::onCreateRoomClicked);
@@ -22,6 +26,14 @@ ChatRoomList::ChatRoomList(const QString &nickname, QWidget *parent)
 
 ChatRoomList::~ChatRoomList() {
     delete ui;
+}
+
+void ChatRoomList::addUserToTable(const QString &nickname, int age, const QString &gender) {
+    int row = ui->userInfoTable->rowCount();
+    ui->userInfoTable->insertRow(row);
+    ui->userInfoTable->setItem(row, 0, new QTableWidgetItem(nickname));
+    ui->userInfoTable->setItem(row, 1, new QTableWidgetItem(QString::number(age)));
+    ui->userInfoTable->setItem(row, 2, new QTableWidgetItem(gender));
 }
 
 void ChatRoomList::onCreateRoomClicked() {
@@ -47,7 +59,7 @@ void ChatRoomList::onJoinRoomClicked() {
         // ChatWindow 생성 및 닉네임과 방 이름 전달
         ChatWindow *chatWindow = new ChatWindow();
         chatWindow->setRoomName(roomName);
-        chatWindow->setNickname(nickname); // 닉네임 전달
+        chatWindow->setNickname(nickname);
         chatWindow->show();
     } else {
         QMessageBox::warning(this, "경고", "입장할 채팅방을 선택하세요.");
