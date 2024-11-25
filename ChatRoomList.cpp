@@ -11,7 +11,7 @@ ChatRoomList::ChatRoomList(const QString &nickname, const QString &continent, QW
     ui->setupUi(this);
 
     // 사용자 정보 표시
-    ui->myInformation->setText("닉네임: " + nickname);
+    ui->myInformation->setText("사용자: " + nickname);
     ui->continentLabel->setText(continent);
 
     // 테이블 초기화
@@ -60,8 +60,8 @@ void ChatRoomList::onJoinRoomClicked() {
 
         // ChatWindow 생성 및 닉네임과 방 이름 전달
         ChatWindow *chatWindow = new ChatWindow();
-        chatWindow->setRoomName(roomName);
-        chatWindow->setNickname(nickname);
+        chatWindow->setRoomName(roomName);  // 방 이름 설정
+        chatWindow->setNickname(nickname); // 사용자 닉네임 설정
         chatWindow->show();
     } else {
         QMessageBox::warning(this, "경고", "입장할 채팅방을 선택하세요.");

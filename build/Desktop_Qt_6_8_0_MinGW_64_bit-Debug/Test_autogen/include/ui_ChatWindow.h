@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
@@ -30,6 +31,7 @@ public:
     QPushButton *sendButton;
     QListWidget *userListWidget;
     QPushButton *leaveRoomButton;
+    QLabel *headerLabel;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -42,19 +44,26 @@ public:
         centralwidget->setObjectName("centralwidget");
         chatMessagesList = new QListWidget(centralwidget);
         chatMessagesList->setObjectName("chatMessagesList");
-        chatMessagesList->setGeometry(QRect(10, 10, 450, 350));
+        chatMessagesList->setGeometry(QRect(10, 60, 450, 350));
         messageLineEdit = new QLineEdit(centralwidget);
         messageLineEdit->setObjectName("messageLineEdit");
-        messageLineEdit->setGeometry(QRect(10, 370, 450, 40));
+        messageLineEdit->setGeometry(QRect(10, 420, 450, 40));
         sendButton = new QPushButton(centralwidget);
         sendButton->setObjectName("sendButton");
-        sendButton->setGeometry(QRect(470, 370, 120, 40));
+        sendButton->setGeometry(QRect(470, 420, 120, 40));
         userListWidget = new QListWidget(centralwidget);
         userListWidget->setObjectName("userListWidget");
-        userListWidget->setGeometry(QRect(470, 10, 120, 350));
+        userListWidget->setGeometry(QRect(470, 59, 120, 301));
         leaveRoomButton = new QPushButton(centralwidget);
         leaveRoomButton->setObjectName("leaveRoomButton");
-        leaveRoomButton->setGeometry(QRect(470, 420, 120, 40));
+        leaveRoomButton->setGeometry(QRect(470, 370, 120, 40));
+        headerLabel = new QLabel(centralwidget);
+        headerLabel->setObjectName("headerLabel");
+        headerLabel->setGeometry(QRect(10, 10, 581, 41));
+        QFont font;
+        font.setPointSize(16);
+        headerLabel->setFont(font);
+        headerLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         ChatWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(ChatWindow);
         menubar->setObjectName("menubar");
@@ -111,6 +120,7 @@ public:
 "      }\n"
 "     ", nullptr));
         leaveRoomButton->setText(QCoreApplication::translate("ChatWindow", "\354\261\204\355\214\205\353\260\251 \353\202\230\352\260\200\352\270\260", nullptr));
+        headerLabel->setText(QString());
     } // retranslateUi
 
 };

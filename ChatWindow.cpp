@@ -26,7 +26,10 @@ void ChatWindow::onSendMessage() {
 
 void ChatWindow::setRoomName(const QString &roomName) {
     this->roomName = roomName;
-    this->setWindowTitle(roomName + " 방");
+
+    // 상단 라벨에 방 이름 설정
+    ui->headerLabel->setText(roomName);
+    this->setWindowTitle(roomName + " 방"); // 창 제목도 업데이트
 }
 
 void ChatWindow::setNickname(const QString &nickname) {

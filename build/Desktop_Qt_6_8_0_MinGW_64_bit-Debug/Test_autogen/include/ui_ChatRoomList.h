@@ -39,11 +39,16 @@ public:
         ChatRoomList->resize(651, 548);
         headerLabel = new QLabel(ChatRoomList);
         headerLabel->setObjectName("headerLabel");
-        headerLabel->setGeometry(QRect(10, 10, 421, 30));
+        headerLabel->setGeometry(QRect(10, 20, 421, 30));
         headerLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         chatRoomListWidget = new QListWidget(ChatRoomList);
         chatRoomListWidget->setObjectName("chatRoomListWidget");
         chatRoomListWidget->setGeometry(QRect(20, 60, 400, 390));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Arial")});
+        font.setPointSize(10);
+        font.setBold(true);
+        chatRoomListWidget->setFont(font);
         createRoomButton = new QPushButton(ChatRoomList);
         createRoomButton->setObjectName("createRoomButton");
         createRoomButton->setGeometry(QRect(20, 470, 200, 40));
@@ -110,7 +115,7 @@ public:
         headerLabel->setText(QCoreApplication::translate("ChatRoomList", "\353\217\231\355\226\211 \354\260\276\352\270\260 \355\224\214\353\236\253\355\217\274 MeEither\354\227\220 \354\230\244\354\213\240 \352\262\203\354\235\204 \355\231\230\354\230\201\355\225\251\353\213\210\353\213\244!", nullptr));
         createRoomButton->setText(QCoreApplication::translate("ChatRoomList", "\354\261\204\355\214\205\353\260\251 \353\247\214\353\223\244\352\270\260", nullptr));
         joinRoomButton->setText(QCoreApplication::translate("ChatRoomList", "\354\261\204\355\214\205\353\260\251 \353\223\244\354\226\264\352\260\200\352\270\260", nullptr));
-        myInformation->setText(QCoreApplication::translate("ChatRoomList", "\353\213\211\353\204\244\354\236\204: \354\202\254\354\232\251\354\236\220", nullptr));
+        myInformation->setText(QCoreApplication::translate("ChatRoomList", "\354\230\250\353\235\274\354\235\270: ", nullptr));
         userInfoTable->setStyleSheet(QCoreApplication::translate("ChatRoomList", "\n"
 "     QTableWidget {\n"
 "         background-color: #f9f9f9;\n"

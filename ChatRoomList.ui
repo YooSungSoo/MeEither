@@ -46,7 +46,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
+     <y>20</y>
      <width>421</width>
      <height>30</height>
     </rect>
@@ -66,6 +66,13 @@
      <width>400</width>
      <height>390</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QPushButton" name="createRoomButton">
@@ -104,7 +111,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>닉네임: 사용자</string>
+    <string>온라인: </string>
    </property>
   </widget>
   <widget class="QTableWidget" name="userInfoTable">

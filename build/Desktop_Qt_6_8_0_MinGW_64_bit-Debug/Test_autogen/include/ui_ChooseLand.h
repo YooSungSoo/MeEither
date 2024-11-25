@@ -42,7 +42,7 @@ public:
         ChooseLand->resize(770, 395);
         headerLabel = new QLabel(ChooseLand);
         headerLabel->setObjectName("headerLabel");
-        headerLabel->setGeometry(QRect(170, 20, 481, 50));
+        headerLabel->setGeometry(QRect(150, 20, 471, 50));
         headerLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         buttonContainer = new QWidget(ChooseLand);
         buttonContainer->setObjectName("buttonContainer");
