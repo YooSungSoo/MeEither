@@ -45,9 +45,9 @@
   <widget class="QLabel" name="headerLabel">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>10</y>
-     <width>600</width>
+     <width>421</width>
      <height>30</height>
     </rect>
    </property>
@@ -97,7 +97,7 @@
   <widget class="QLabel" name="myInformation">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>490</x>
      <y>50</y>
      <width>200</width>
      <height>30</height>
@@ -110,10 +110,10 @@
   <widget class="QTableWidget" name="userInfoTable">
    <property name="geometry">
     <rect>
-     <x>430</x>
+     <x>440</x>
      <y>80</y>
      <width>201</width>
-     <height>351</height>
+     <height>371</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -157,6 +157,32 @@
    <column/>
    <column/>
    <column/>
+  </widget>
+  <widget class="QPushButton" name="showProfile">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>470</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>프로필 보기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="landName">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>20</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>대륙</string>
+   </property>
   </widget>
  </widget>
  <resources/>

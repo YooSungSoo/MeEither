@@ -216,7 +216,7 @@ build Test_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Test_autogen
 
-build Test_autogen: phony CMakeFiles/Test_autogen Test_autogen/include/ui_ChatWindow.h Test_autogen/include/ui_SignUpWindow.h Test_autogen/include/ui_LoginWindow.h Test_autogen/include/ui_ChatRoomList.h Test_autogen/timestamp Test_autogen/mocs_compilation.cpp Test_autogen_timestamp_deps
+build Test_autogen: phony CMakeFiles/Test_autogen Test_autogen/include/ui_ChatWindow.h Test_autogen/include/ui_SignUpWindow.h Test_autogen/include/ui_LoginWindow.h Test_autogen/include/ui_ChatRoomList.h Test_autogen/include/ui_ClientProfile.h Test_autogen/include/ui_ChooseLand.h Test_autogen/timestamp Test_autogen/mocs_compilation.cpp Test_autogen_timestamp_deps
 
 
 #############################################
@@ -233,7 +233,7 @@ build Test_autogen/timestamp Test_autogen/mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Phony custom command for CMakeFiles\Test_autogen
 
-build CMakeFiles/Test_autogen Test_autogen/include/ui_ChatWindow.h Test_autogen/include/ui_SignUpWindow.h Test_autogen/include/ui_LoginWindow.h Test_autogen/include/ui_ChatRoomList.h | ${cmake_ninja_workdir}CMakeFiles/Test_autogen ${cmake_ninja_workdir}Test_autogen/include/ui_ChatWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_SignUpWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_LoginWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_ChatRoomList.h: phony Test_autogen/timestamp || Test_autogen_timestamp_deps
+build CMakeFiles/Test_autogen Test_autogen/include/ui_ChatWindow.h Test_autogen/include/ui_SignUpWindow.h Test_autogen/include/ui_LoginWindow.h Test_autogen/include/ui_ChatRoomList.h Test_autogen/include/ui_ClientProfile.h Test_autogen/include/ui_ChooseLand.h | ${cmake_ninja_workdir}CMakeFiles/Test_autogen ${cmake_ninja_workdir}Test_autogen/include/ui_ChatWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_SignUpWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_LoginWindow.h ${cmake_ninja_workdir}Test_autogen/include/ui_ChatRoomList.h ${cmake_ninja_workdir}Test_autogen/include/ui_ClientProfile.h ${cmake_ninja_workdir}Test_autogen/include/ui_ChooseLand.h: phony Test_autogen/timestamp || Test_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

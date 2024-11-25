@@ -29,6 +29,7 @@ public:
     QPushButton *joinRoomButton;
     QLabel *myInformation;
     QTableWidget *userInfoTable;
+    QPushButton *showProfile;
 
     void setupUi(QWidget *ChatRoomList)
     {
@@ -50,12 +51,12 @@ public:
         joinRoomButton->setGeometry(QRect(240, 470, 180, 40));
         myInformation = new QLabel(ChatRoomList);
         myInformation->setObjectName("myInformation");
-        myInformation->setGeometry(QRect(480, 50, 200, 30));
+        myInformation->setGeometry(QRect(490, 50, 200, 30));
         userInfoTable = new QTableWidget(ChatRoomList);
         if (userInfoTable->columnCount() < 3)
             userInfoTable->setColumnCount(3);
         userInfoTable->setObjectName("userInfoTable");
-        userInfoTable->setGeometry(QRect(430, 80, 201, 351));
+        userInfoTable->setGeometry(QRect(440, 80, 201, 371));
         userInfoTable->setColumnCount(3);
         userInfoTable->horizontalHeader()->setVisible(true);
         userInfoTable->horizontalHeader()->setMinimumSectionSize(23);
@@ -63,6 +64,9 @@ public:
         userInfoTable->horizontalHeader()->setHighlightSections(true);
         userInfoTable->verticalHeader()->setVisible(false);
         userInfoTable->verticalHeader()->setDefaultSectionSize(17);
+        showProfile = new QPushButton(ChatRoomList);
+        showProfile->setObjectName("showProfile");
+        showProfile->setGeometry(QRect(450, 470, 180, 40));
 
         retranslateUi(ChatRoomList);
 
@@ -115,6 +119,7 @@ public:
             QCoreApplication::translate("ChatRoomList", "\353\213\211\353\204\244\354\236\204", nullptr),
             QCoreApplication::translate("ChatRoomList", "\353\202\230\354\235\264", nullptr),
             QCoreApplication::translate("ChatRoomList", "\354\204\261\353\263\204", nullptr)}));
+        showProfile->setText(QCoreApplication::translate("ChatRoomList", "\355\224\204\353\241\234\355\225\204 \353\263\264\352\270\260", nullptr));
     } // retranslateUi
 
 };

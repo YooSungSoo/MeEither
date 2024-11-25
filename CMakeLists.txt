@@ -45,6 +45,9 @@ else()
         ChatRoomList.cpp
         DatabaseManager.h
         DatabaseManager.cpp
+        ClientProfile.ui
+        ChooseLand.ui
+
     )
 endif()
 

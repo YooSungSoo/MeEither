@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientProfile</class>
+ <widget class="QWidget" name="ClientProfile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>프로필</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+    }
+    QPushButton {
+        background-color: #87ceeb;
+        border: 1px solid #4682b4;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+    QPushButton:hover {
+        background-color: #4682b4;
+    }
+    QLabel {
+        font-size: 14px;
+        font-weight: bold;
+        color: #4682b4;
+    }
+    QLineEdit, QTextEdit {
+        border: 1px solid #87ceeb;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QGroupBox {
+        border: 1px solid #4682b4;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+   </string>
+  </property>
+  <widget class="QGroupBox" name="profilePhotoBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>251</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>프로필 사진</string>
+   </property>
+   <widget class="QLabel" name="profilePhotoLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>180</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+      QLabel {
+          border: 1px solid #87ceeb;
+          background-color: #ffffff;
+      }
+     </string>
+    </property>
+    <property name="text">
+     <string>이미지가 없습니다</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadPhotoButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>160</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>사진 업로드</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="userInfoBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>271</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>사용자 정보</string>
+   </property>
+   <widget class="QLabel" name="nicknameLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>닉네임: 사용자</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ageLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>나이: 25</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="genderLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>성별: 남자</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mbtiLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MBTI: INFP</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>370</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>닫기</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="style">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>251</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>여행 스타일</string>
+   </property>
+   <widget class="QLabel" name="preferredDestinationsLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>300</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>선호 지역: 북유럽, 동유럽</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="style_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>230</y>
+     <width>271</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>선호 지역</string>
+   </property>
+   <widget class="QLabel" name="preferredDestinationsLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>300</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>선호 지역: 북유럽, 동유럽</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
