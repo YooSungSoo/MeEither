@@ -6,6 +6,7 @@
 #include <QSqlError>
 #include <QMessageBox>
 #include <QDebug>
+#include "ChooseLand.h" // ChooseLand 포함
 
 LoginWindow::LoginWindow(QWidget *parent)
     : QWidget(parent), ui(new Ui::LoginWindow), chatRoomList(nullptr) {
@@ -45,9 +46,9 @@ void LoginWindow::onLoginButtonClicked() {
         QString nickname = query.value(0).toString();
         qDebug() << "로그인 성공! 닉네임:" << nickname;
 
-        // ChatRoomList로 이동
-        chatRoomList = new ChatRoomList(nickname); // 닉네임 전달
-        chatRoomList->show();
+        // ChooseLand로 이동
+        chooseLand = new ChooseLand(nickname); // 닉네임 전달
+        chooseLand->show();
         this->close(); // 현재 LoginWindow 닫기
     } else {
         QMessageBox::warning(this, "로그인 실패", "아이디 또는 비밀번호가 일치하지 않습니다.");

@@ -627,6 +627,10 @@ Test_autogen/timestamp: \
 	C:/Users/elcan/Desktop/Test/ChatServer.h \
 	C:/Users/elcan/Desktop/Test/ChatWindow.cpp \
 	C:/Users/elcan/Desktop/Test/ChatWindow.h \
+	C:/Users/elcan/Desktop/Test/ChooseLand.cpp \
+	C:/Users/elcan/Desktop/Test/ChooseLand.h \
+	C:/Users/elcan/Desktop/Test/ClientProfile.cpp \
+	C:/Users/elcan/Desktop/Test/ClientProfile.h \
 	C:/Users/elcan/Desktop/Test/DatabaseManager.cpp \
 	C:/Users/elcan/Desktop/Test/DatabaseManager.h \
 	C:/Users/elcan/Desktop/Test/LoginWindow.cpp \
@@ -641,6 +645,8 @@ Test_autogen/timestamp: \
 	C:/Users/elcan/Desktop/Test/main.cpp \
 	C:/Users/elcan/Desktop/Test/ChatRoomList.ui \
 	C:/Users/elcan/Desktop/Test/ChatWindow.ui \
+	C:/Users/elcan/Desktop/Test/ChooseLand.ui \
+	C:/Users/elcan/Desktop/Test/ClientProfile.ui \
 	C:/Users/elcan/Desktop/Test/LoginWindow.ui \
 	C:/Users/elcan/Desktop/Test/SignUpWindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

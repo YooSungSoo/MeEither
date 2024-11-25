@@ -334,6 +334,18 @@
 			null
 		],
 		[
+			"C:/Users/elcan/Desktop/Test/ChooseLand.h",
+			"MU",
+			"EWIEGA46WW/moc_ChooseLand.cpp",
+			null
+		],
+		[
+			"C:/Users/elcan/Desktop/Test/ClientProfile.h",
+			"MU",
+			"EWIEGA46WW/moc_ClientProfile.cpp",
+			null
+		],
+		[
 			"C:/Users/elcan/Desktop/Test/DatabaseManager.h",
 			"MU",
 			"EWIEGA46WW/moc_DatabaseManager.cpp",
@@ -431,6 +443,8 @@
 		[ "C:/Users/elcan/Desktop/Test/ChatRoomList.cpp", "MU", null ],
 		[ "C:/Users/elcan/Desktop/Test/ChatServer.cpp", "MU", null ],
 		[ "C:/Users/elcan/Desktop/Test/ChatWindow.cpp", "MU", null ],
+		[ "C:/Users/elcan/Desktop/Test/ChooseLand.cpp", "MU", null ],
+		[ "C:/Users/elcan/Desktop/Test/ClientProfile.cpp", "MU", null ],
 		[ "C:/Users/elcan/Desktop/Test/DatabaseManager.cpp", "MU", null ],
 		[ "C:/Users/elcan/Desktop/Test/LoginWindow.cpp", "MU", null ],
 		[ "C:/Users/elcan/Desktop/Test/SignUpWindow.cpp", "MU", null ],

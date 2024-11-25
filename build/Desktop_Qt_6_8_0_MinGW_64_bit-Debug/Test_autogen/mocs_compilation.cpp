@@ -3,5 +3,7 @@
 #include "EWIEGA46WW/moc_ChatRoomList.cpp"
 #include "EWIEGA46WW/moc_ChatServer.cpp"
 #include "EWIEGA46WW/moc_ChatWindow.cpp"
+#include "EWIEGA46WW/moc_ChooseLand.cpp"
+#include "EWIEGA46WW/moc_ClientProfile.cpp"
 #include "EWIEGA46WW/moc_LoginWindow.cpp"
 #include "EWIEGA46WW/moc_SignUpWindow.cpp"

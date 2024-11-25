@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>581</width>
-    <height>411</height>
+    <height>434</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,11 +35,6 @@
         font-weight: bold;
         color: #4682b4;
     }
-    QLineEdit, QTextEdit {
-        border: 1px solid #87ceeb;
-        border-radius: 5px;
-        padding: 5px;
-    }
     QGroupBox {
         border: 1px solid #4682b4;
         border-radius: 8px;
@@ -63,10 +58,10 @@
    <widget class="QLabel" name="profilePhotoLabel">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>30</y>
-      <width>180</width>
-      <height>120</height>
+      <width>211</width>
+      <height>151</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -84,26 +79,13 @@
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="uploadPhotoButton">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>160</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>사진 업로드</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QGroupBox" name="userInfoBox">
    <property name="geometry">
     <rect>
      <x>290</x>
      <y>20</y>
-     <width>271</width>
+     <width>261</width>
      <height>201</height>
     </rect>
    </property>
@@ -120,7 +102,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>닉네임: 사용자</string>
+     <string>닉네임:</string>
     </property>
    </widget>
    <widget class="QLabel" name="ageLabel">
@@ -128,12 +110,12 @@
      <rect>
       <x>10</x>
       <y>80</y>
-      <width>221</width>
+      <width>241</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>나이: 25</string>
+     <string>나이: </string>
     </property>
    </widget>
    <widget class="QLabel" name="genderLabel">
@@ -141,12 +123,12 @@
      <rect>
       <x>10</x>
       <y>120</y>
-      <width>221</width>
+      <width>241</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>성별: 남자</string>
+     <string>성별:</string>
     </property>
    </widget>
    <widget class="QLabel" name="mbtiLabel">
@@ -154,20 +136,20 @@
      <rect>
       <x>10</x>
       <y>160</y>
-      <width>221</width>
+      <width>241</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>MBTI: INFP</string>
+     <string>MBTI: </string>
     </property>
    </widget>
   </widget>
   <widget class="QPushButton" name="closeButton">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>370</y>
+     <x>240</x>
+     <y>390</y>
      <width>100</width>
      <height>30</height>
     </rect>
@@ -176,55 +158,61 @@
     <string>닫기</string>
    </property>
   </widget>
-  <widget class="QGroupBox" name="style">
+  <widget class="QGroupBox" name="travelStyleBox">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>230</y>
-     <width>251</width>
-     <height>121</height>
+     <width>531</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="title">
     <string>여행 스타일</string>
    </property>
-   <widget class="QLabel" name="preferredDestinationsLabel_2">
+   <widget class="QLabel" name="travelStyleLabel">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>200</y>
-      <width>300</width>
-      <height>40</height>
+      <y>40</y>
+      <width>491</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>선호 지역: 북유럽, 동유럽</string>
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignTop</set>
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="style_2">
+  <widget class="QGroupBox" name="preferredDestinationsBox">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>230</y>
-     <width>271</width>
-     <height>121</height>
+     <x>20</x>
+     <y>310</y>
+     <width>531</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="title">
     <string>선호 지역</string>
    </property>
-   <widget class="QLabel" name="preferredDestinationsLabel_3">
+   <widget class="QLabel" name="preferredDestinationsLabel">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>200</y>
-      <width>300</width>
-      <height>40</height>
+      <y>40</y>
+      <width>491</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>선호 지역: 북유럽, 동유럽</string>
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignTop</set>
     </property>
    </widget>
   </widget>

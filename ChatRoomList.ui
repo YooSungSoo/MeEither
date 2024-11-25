@@ -158,7 +158,7 @@
    <column/>
    <column/>
   </widget>
-  <widget class="QPushButton" name="showProfile">
+  <widget class="QPushButton" name="viewProfileButton">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -168,10 +168,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>프로필 보기</string>
+    <string>나의 프로필 보기</string>
    </property>
   </widget>
-  <widget class="QLabel" name="landName">
+  <widget class="QLabel" name="continentLabel">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -181,7 +181,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>대륙</string>
+    <string/>
    </property>
   </widget>
  </widget>

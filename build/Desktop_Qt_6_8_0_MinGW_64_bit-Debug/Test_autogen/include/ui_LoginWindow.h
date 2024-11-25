@@ -31,11 +31,11 @@ public:
     {
         if (LoginWindow->objectName().isEmpty())
             LoginWindow->setObjectName("LoginWindow");
-        LoginWindow->resize(400, 300);
+        LoginWindow->resize(400, 260);
         headerLabel = new QLabel(LoginWindow);
         headerLabel->setObjectName("headerLabel");
         headerLabel->setGeometry(QRect(100, 20, 200, 40));
-        headerLabel->setAlignment(Qt::AlignCenter);
+        headerLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         usernameLineEdit = new QLineEdit(LoginWindow);
         usernameLineEdit->setObjectName("usernameLineEdit");
         usernameLineEdit->setGeometry(QRect(100, 80, 200, 30));
@@ -80,7 +80,6 @@ public:
 "        padding: 5px;\n"
 "    }\n"
 "   ", nullptr));
-        headerLabel->setText(QCoreApplication::translate("LoginWindow", "MeEither", nullptr));
         headerLabel->setStyleSheet(QCoreApplication::translate("LoginWindow", "\n"
 "     QLabel {\n"
 "         font-size: 24px;\n"
@@ -88,6 +87,7 @@ public:
 "         color: #4682b4;\n"
 "     }\n"
 "    ", nullptr));
+        headerLabel->setText(QCoreApplication::translate("LoginWindow", "MeEither", nullptr));
         usernameLineEdit->setPlaceholderText(QCoreApplication::translate("LoginWindow", "\354\225\204\354\235\264\353\224\224 \354\236\205\353\240\245", nullptr));
         passwordLineEdit->setPlaceholderText(QCoreApplication::translate("LoginWindow", "\353\271\204\353\260\200\353\262\210\355\230\270 \354\236\205\353\240\245", nullptr));
         loginButton->setText(QCoreApplication::translate("LoginWindow", "\353\241\234\352\267\270\354\235\270", nullptr));

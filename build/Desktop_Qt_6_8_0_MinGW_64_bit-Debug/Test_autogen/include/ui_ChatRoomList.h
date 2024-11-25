@@ -29,7 +29,8 @@ public:
     QPushButton *joinRoomButton;
     QLabel *myInformation;
     QTableWidget *userInfoTable;
-    QPushButton *showProfile;
+    QPushButton *viewProfileButton;
+    QLabel *continentLabel;
 
     void setupUi(QWidget *ChatRoomList)
     {
@@ -38,7 +39,7 @@ public:
         ChatRoomList->resize(651, 548);
         headerLabel = new QLabel(ChatRoomList);
         headerLabel->setObjectName("headerLabel");
-        headerLabel->setGeometry(QRect(20, 10, 600, 30));
+        headerLabel->setGeometry(QRect(10, 10, 421, 30));
         headerLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         chatRoomListWidget = new QListWidget(ChatRoomList);
         chatRoomListWidget->setObjectName("chatRoomListWidget");
@@ -64,9 +65,12 @@ public:
         userInfoTable->horizontalHeader()->setHighlightSections(true);
         userInfoTable->verticalHeader()->setVisible(false);
         userInfoTable->verticalHeader()->setDefaultSectionSize(17);
-        showProfile = new QPushButton(ChatRoomList);
-        showProfile->setObjectName("showProfile");
-        showProfile->setGeometry(QRect(450, 470, 180, 40));
+        viewProfileButton = new QPushButton(ChatRoomList);
+        viewProfileButton->setObjectName("viewProfileButton");
+        viewProfileButton->setGeometry(QRect(450, 470, 180, 40));
+        continentLabel = new QLabel(ChatRoomList);
+        continentLabel->setObjectName("continentLabel");
+        continentLabel->setGeometry(QRect(510, 20, 101, 30));
 
         retranslateUi(ChatRoomList);
 
@@ -119,7 +123,8 @@ public:
             QCoreApplication::translate("ChatRoomList", "\353\213\211\353\204\244\354\236\204", nullptr),
             QCoreApplication::translate("ChatRoomList", "\353\202\230\354\235\264", nullptr),
             QCoreApplication::translate("ChatRoomList", "\354\204\261\353\263\204", nullptr)}));
-        showProfile->setText(QCoreApplication::translate("ChatRoomList", "\355\224\204\353\241\234\355\225\204 \353\263\264\352\270\260", nullptr));
+        viewProfileButton->setText(QCoreApplication::translate("ChatRoomList", "\353\202\230\354\235\230 \355\224\204\353\241\234\355\225\204 \353\263\264\352\270\260", nullptr));
+        continentLabel->setText(QString());
     } // retranslateUi
 
 };

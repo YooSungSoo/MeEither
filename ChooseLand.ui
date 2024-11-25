@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>770</width>
-    <height>400</height>
+    <height>395</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -48,7 +48,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>여행을 원하시는 대륙을 선택하세요</string>
+    <string>동행을 찾을 대륙을 선택하세요</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>

@@ -47,6 +47,10 @@ else()
         DatabaseManager.cpp
         ClientProfile.ui
         ChooseLand.ui
+        ChooseLand.h
+        ChooseLand.cpp
+        ClientProfile.h
+        ClientProfile.cpp
 
     )
 endif()

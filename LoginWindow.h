@@ -4,7 +4,7 @@
 #include <QWidget>
 #include "SignUpWindow.h" // SignUpWindow 클래스 포함
 #include "ChatRoomList.h"
-
+#include "ChooseLand.h" // ChooseLand 추가
 
 namespace Ui {
 class LoginWindow;
@@ -26,6 +26,7 @@ private:
     Ui::LoginWindow *ui;
     SignUpWindow *signUpWindow; // 회원가입 창 포인터 멤버 변수 추가
     ChatRoomList *chatRoomList;
+    ChooseLand *chooseLand; // ChooseLand 창 추가
 
 signals:
     void loginSuccessful(const QString &username); // 로그인 성공 시그널

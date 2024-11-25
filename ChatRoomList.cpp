@@ -4,14 +4,15 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QDebug>
+#include "ClientProfile.h"
 
-ChatRoomList::ChatRoomList(const QString &nickname, QWidget *parent)
-    : QWidget(parent), ui(new Ui::ChatRoomList) {
+ChatRoomList::ChatRoomList(const QString &nickname, const QString &continent, QWidget *parent)
+    : QWidget(parent), ui(new Ui::ChatRoomList), nickname(nickname), continent(continent) {
     ui->setupUi(this);
 
     // 사용자 정보 표시
     ui->myInformation->setText("닉네임: " + nickname);
-    this->nickname = nickname;
+    ui->continentLabel->setText(continent);
 
     // 테이블 초기화
     ui->userInfoTable->setColumnCount(3);
@@ -22,6 +23,7 @@ ChatRoomList::ChatRoomList(const QString &nickname, QWidget *parent)
     // 버튼 클릭 시 슬롯 연결
     connect(ui->createRoomButton, &QPushButton::clicked, this, &ChatRoomList::onCreateRoomClicked);
     connect(ui->joinRoomButton, &QPushButton::clicked, this, &ChatRoomList::onJoinRoomClicked);
+    connect(ui->viewProfileButton, &QPushButton::clicked, this, &ChatRoomList::onViewProfileClicked);
 }
 
 ChatRoomList::~ChatRoomList() {
@@ -64,4 +66,13 @@ void ChatRoomList::onJoinRoomClicked() {
     } else {
         QMessageBox::warning(this, "경고", "입장할 채팅방을 선택하세요.");
     }
+}
+void ChatRoomList::onViewProfileClicked() {
+    // ClientProfile 창을 독립적으로 생성
+    ClientProfile *clientProfile = new ClientProfile(nickname);
+
+    // 독립된 창으로 표시
+    clientProfile->setAttribute(Qt::WA_DeleteOnClose); // 창 닫을 때 메모리 자동 해제
+    clientProfile->setWindowModality(Qt::ApplicationModal); // 모달 창으로 설정 (선택 사항)
+    clientProfile->show();
 }

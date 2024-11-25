@@ -379,4 +379,6 @@ C:/Users/elcan/Desktop/Test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Test_autog
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/elcan/Desktop/Test/ChatRoomList.h \
+  C:/Users/elcan/Desktop/Test/ChooseLand.h \
+  C:/Users/elcan/Desktop/Test/ClientProfile.h \
   C:/Users/elcan/Desktop/Test/SignUpWindow.h
